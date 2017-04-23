@@ -2,7 +2,7 @@
 
 Real-time Twitch viewer count for the top 10 most popular streaming games. More features planned for the future!
 
-Notes:
+### Notes:
 
 Mouse-over a line to bring up information about the corresponding game.
 Current mouse-over information (will add more soon): 
