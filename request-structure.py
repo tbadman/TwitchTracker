@@ -1,7 +1,7 @@
 import requests
 import json
 
-url = "https://api.twitch.tv/kraken/games/top"
+url = "https://api.twitch.tv/kraken/streams"
 clientID = {"Client-ID": "XXXXX"}
 
 r = requests.get(url,headers=clientID)
