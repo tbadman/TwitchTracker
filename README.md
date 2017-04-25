@@ -4,6 +4,14 @@ Real-time Twitch viewer count for the top 10 most popular streaming games. More 
 
 ### Notes:
 
+IMPORTANT: Requires a Client-ID code to run. How to obtain Client-ID:
+- Go to https://www.twitch.tv/ and log in.
+- Click on Settings in the top right corner.
+- On the Connections tab, scroll to the bottom.
+- Click 'Register Your Application' under 'Other Connections'.
+- Follow the on-screen instructions to register and receive your personalized Client-ID code.
+- Replace 'XXXXX' with your Client-ID code under clientID in population_tracking.py.
+
 Mouse-over a line to bring up information about the corresponding game.
 Current mouse-over information (will add more soon): 
 - game name
