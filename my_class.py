@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 class GameData:
 
     def __init__(self,colors):
+        """Setup initial values"""
         self.line, = plt.plot([],[],color=next(colors))
         self.name = ''
         self.viewers = 0
@@ -18,6 +19,7 @@ class GameData:
         self.name = name
 
     def update_text(self, x,y):
+        """Format text for display tooltip"""
         self.text = ("Game: " + self.name + "\n" +
                      "Viewers: " + str(self.viewers) + "\n" +
                      "Top Streamer: " + self.streamer + "\n" +
@@ -27,6 +29,7 @@ class GameData:
         self.text_color = self.line.get_color()
 
     def update_data(self,x,y,reset):
+        """Update plot data"""
         self.viewers = y
         self.line.set_xdata(np.append(self.line.get_xdata(),x))
         if not reset:
