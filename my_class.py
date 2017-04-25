@@ -2,7 +2,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 class GameData:
-
+    """Container for game data recieved from Twitch request."""
+    
     def __init__(self,colors):
         """Setup initial values"""
         self.line, = plt.plot([],[],color=next(colors))
