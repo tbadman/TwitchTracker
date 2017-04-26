@@ -1,6 +1,6 @@
 # Twitch View Tracker
 
-Real-time Twitch viewer count for the top 10 most popular streaming games. More features planned for the future!
+Real-time Twitch viewer count for the most popular games currently being streamed. More features planned for the future!
 
 ![Alt text](http://i.imgur.com/gnBYj37.png)
 
