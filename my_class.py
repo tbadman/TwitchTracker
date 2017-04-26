@@ -2,8 +2,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 class GameData:
-
+    """Container for game data recieved from Twitch request."""
+    
     def __init__(self,colors):
+        """Setup initial values"""
         self.line, = plt.plot([],[],color=next(colors))
         self.name = ''
         self.viewers = 0
@@ -32,6 +34,7 @@ class GameData:
         self.text_color = self.line.get_color()
 
     def update_data(self,x,y,reset):
+        """Update plot data"""
         self.viewers = y
         self.line.set_xdata(np.append(self.line.get_xdata(),x))
         
