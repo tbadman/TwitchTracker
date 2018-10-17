@@ -3,8 +3,8 @@ import matplotlib.pyplot as plt
 
 class GameData:
     """Container for game data recieved from Twitch request."""
-    
-    def __init__(self,colors):
+
+    def __init__(self, colors):
         """Setup initial values"""
         self.line, = plt.plot([],[],color=next(colors))
         self.name = ''
@@ -28,7 +28,7 @@ class GameData:
         else:
             self.text = ("Game: " + self.name + "\n" +
                          "Viewers: " + str(self.viewers))
-            
+
         self.text_xpos = x
         self.text_ypos = y - 0.01*y
         self.text_color = self.line.get_color()
@@ -37,7 +37,7 @@ class GameData:
         """Update plot data"""
         self.viewers = y
         self.line.set_xdata(np.append(self.line.get_xdata(),x))
-        
+
         if not reset:
             self.line.set_ydata(np.append(self.line.get_ydata(),y))
         else:
